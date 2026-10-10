@@ -1,0 +1,22 @@
+package com.example.hw02.task4
+fun calculateStudyMinutes(sessions: Int, minutesPerSession: Int): Int {
+    return sessions * minutesPerSession
+}
+fun calculateTotalCredits(courses: Int, creditsPerCourse: Int): Int {
+    return courses * creditsPerCourse
+}
+
+fun main() {
+    val total1 = calculateStudyMinutes(3, 25)
+    println("Total study time: $total1 minutes")
+
+    val total2 = calculateStudyMinutes(4, 30)
+    println("Total study time: $total2 minutes")
+
+    println() //
+
+    for (course in 1..5) {
+        val totalCredits = calculateTotalCredits(course, 3)
+        println("Courses: $course, total credits: $totalCredits")
+    }
+}
